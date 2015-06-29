@@ -1,0 +1,61 @@
+.message {
+  margin: 0;
+
+  time {
+    width: 80px;
+    color: #999;
+    display: block;
+    float: left;
+    font-weight: 100;
+  }
+
+  p {
+    width: calc(100% - 80px);
+    display: block;
+    float: left;
+    margin: 0;
+
+    span {
+      display: block;
+      float: left;
+    }
+
+    .author {
+      width: 100px;
+      font-weight: 100;
+      color: #999;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+
+      &+span {
+        border-left: solid 1px #F1F1F1;
+        padding-left: 20px;
+        padding-bottom: .5em;
+        display: inline-block;
+      }
+    }
+  }
+
+  .self {
+    font-weight: 600;
+
+    .author {
+      font-weight: normal;
+      color: #555;
+    }
+  }
+
+  span {
+
+  }
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: solid 1px #F1F1F1;
+  margin: 1em 0;
+  padding: 0;
+}

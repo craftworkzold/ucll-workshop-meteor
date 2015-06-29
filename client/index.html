@@ -1,0 +1,18 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chat application UCLL</title>
+</head>
+
+<body>
+  <header>
+    {{> loginButtons align='right'}}
+  </header>
+
+  <div class="container">
+    {{#if currentUser}}
+      {{> newMessage}}
+      <hr />
+    {{/if}}
+    {{> messages}}
+  </div>
+</body>

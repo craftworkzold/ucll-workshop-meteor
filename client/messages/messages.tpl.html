@@ -1,0 +1,19 @@
+<template name="messages">
+  {{#each messages}}
+    <div class="message">
+      <time>{{time this.time}}</time>
+      {{#if isOwner this}}
+        <p class="self">
+          <span class="author" title="{{this.username}}">{{this.username}}</span>
+          <span>{{this.message}}</span>
+        </p>
+      {{/if}}
+      {{#unless isOwner this}}
+        <p>
+          <span class="author" title="{{this.username}}">{{this.username}}</span>
+          <span>{{this.message}}</span>
+        </p>
+      {{/unless}}
+    </div>
+  {{/each}}
+</template>

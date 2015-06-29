@@ -1,0 +1,19 @@
+<template name="newMessage">
+  <form name="message">
+    <input type="text" name="message" placeholder="Compose a new message..." autocomplete="off" />
+    <div class="info">
+      {{#if isMessageTooLong}}
+        <span class="danger count">{{count}}</span>
+      {{/if}}
+      {{#unless isMessageTooLong}}
+        <span class="count">{{count}}</span>
+      {{/unless}}
+      {{#if isValidMessage}}
+        <button type="submit">Send</button>
+      {{/if}}
+      {{#unless isValidMessage}}
+        <button type="submit" disabled>Send</button>
+      {{/unless}}
+    </div>
+  </form>
+</template>
