@@ -1,0 +1,42 @@
+@import '../variables';
+
+@mixin input {
+  border-radius: 0;
+  border: solid 1px $borderColor;
+  transition: $stylingTransition;
+  font-size: 1.1em;
+  padding: $newMessageVerticalPadding;
+  margin: 0.2em 0;
+
+  &:focus {
+    -webkit-box-shadow: $inputBoxShadow;
+    -moz-box-shadow: $inputBoxShadow;
+    box-shadow: $inputBoxShadow;
+    border-color: $inputFocusBorderColor;
+    outline: none;
+  }
+}
+
+@mixin button {
+  background: $buttonColor;
+  color: $buttonTextColor;
+  font-weight: $buttonTextWeight;
+  border: none;
+  border-radius: 0;
+  text-shadow: 0 0 5px rgba(0, 0, 0, .3);
+  cursor: pointer;
+  transition: $stylingTransition;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background: $buttonHoverColor;
+  }
+
+  &:disabled {
+    background-color: $buttonDisabledColor;
+    cursor: not-allowed;
+  }
+}

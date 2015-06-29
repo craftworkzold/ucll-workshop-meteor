@@ -1,18 +1,10 @@
+@import '../variables';
+@import '../mixins/input.mixin';
+
 input[type=text] {
   width: 100%;
-  border: solid 1px #D4D4D1;
-  transition: .7s;
-  font-size: 1.1em;
-  padding: 0.3em;
+  @include input;
   margin: 0.2em 0;
-}
-
-input[type=text]:focus {
-  -webkit-box-shadow: 0 0 5px 0 rgba(69, 155, 231, .75);
-  -moz-box-shadow: 0 0 5px 0 rgba(69, 155, 231, .75);
-  box-shadow: 0 0 5px 0 rgba(69, 155, 231, .75);
-  border-color: #459be7;
-  outline: none;
 }
 
 .info {
@@ -26,38 +18,19 @@ form:after {
 }
 
 button {
-  background: #459be7;
-  color: #FFF;
-  font-weight: 600;
-  padding: .3em 1.9em;
-  border: none;
+  @include button;
+  padding: $newMessageVerticalPadding 1.9em;
   font-size: 1.2em;
   margin: 0;
-  text-shadow: 0 0 5px rgba(0, 0, 0, .3);
-  cursor: pointer;
-  transition: .7s;
-
-  &:focus {
-    outline: none;
-  }
-
-  &:hover {
-    background: #1c82dd;
-  }
-
-  &:disabled {
-    background-color: #90BFE8;
-    cursor: not-allowed;
-  }
 }
 .count {
   font-weight: 300;
   font-size: 1.35em;
-  color: #CCC;
-  transition: .7s;
+  color: $textMutedColor;
+  transition: $stylingTransition;
 
   &.danger {
-    color: #a94442;
-    font-weight: 600;
+    color: $textDangerColor;
+    font-weight: $counterDangerWeight;
   }
 }

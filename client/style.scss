@@ -1,5 +1,8 @@
+@import 'variables';
+@import 'mixins/input.mixin';
+
 body, * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $fontFamily;
   box-sizing: border-box;
 }
 
@@ -12,57 +15,29 @@ body, * {
 header {
   width: 100%;
   text-align: right;
-  padding: 0 0.5em 0.7em;
-  border-bottom: solid 1px #E5E5E5;
+  padding: 0 .5em .7em;
+  border-bottom: solid 1px $headerBorderColor;
   margin-bottom: 1em;
 
   #login-buttons {
     text-align: left;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $fontFamily;
 
     .login-link-text,
     .login-close-text {
-      color: #459be7;
+      color: $textPrimaryColor;
     }
 
     .accounts-dialog input {
-      border-radius: 0;
-      border: solid 1px #D4D4D1;
-      transition: .7s;
-      font-size: 1.1em;
-      padding: 0.3em;
-      margin: 0.2em 0;
-
-      &:focus {
-        -webkit-box-shadow: 0 0 5px 0 rgba(69, 155, 231, .75);
-        -moz-box-shadow: 0 0 5px 0 rgba(69, 155, 231, .75);
-        box-shadow: 0 0 5px 0 rgba(69, 155, 231, .75);
-        border-color: #459be7;
-        outline: none;
-      }
+      @include input;
     }
 
     .login-button {
-      background: #459be7;
-      color: #FFF;
-      font-weight: 600;
-      border: none;
-      border-radius: 0;
-      text-shadow: 0 0 5px rgba(0, 0, 0, .3);
-      cursor: pointer;
-      transition: .7s;
-
-      &:focus {
-        outline: none;
-      }
-
-      &:hover {
-        background: #1c82dd;
-      }
+      @include button;
     }
 
     .additional-link-container {
-      color: #459be7;
+      color: $textPrimaryColor;
     }
   }
 }

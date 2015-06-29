@@ -1,16 +1,23 @@
+@import '../variables';
+@import '../mixins/clearfix.mixin';
+
 .message {
   margin: 0;
 
+  .clearfix {
+    @include clearfix;
+  }
+
   time {
-    width: 80px;
-    color: #999;
+    width: $messageTimeWidth;
+    color: $messageTimeColor;
     display: block;
     float: left;
-    font-weight: 100;
+    font-weight: $messageTimeWeight;
   }
 
   p {
-    width: calc(100% - 80px);
+    width: calc(100% - $messageTimeWidth);
     display: block;
     float: left;
     margin: 0;
@@ -22,14 +29,14 @@
 
     .author {
       width: 100px;
-      font-weight: 100;
-      color: #999;
+      font-weight: $messageAuthorWeight;
+      color: $messageAuthorColor;
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
 
       &+span {
-        border-left: solid 1px #F1F1F1;
+        border-left: solid 1px $messageAuthorDividerColor;
         padding-left: 20px;
         padding-bottom: .5em;
         display: inline-block;
@@ -38,16 +45,12 @@
   }
 
   .self {
-    font-weight: 600;
+    font-weight: $messageOwnerWeight;
 
     .author {
       font-weight: normal;
-      color: #555;
+      color: $messageOwnerColor;
     }
-  }
-
-  span {
-
   }
 }
 
@@ -55,7 +58,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: solid 1px #F1F1F1;
+  border-top: solid 1px $lightBorderColor;
   margin: 1em 0;
   padding: 0;
 }

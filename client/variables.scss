@@ -1,0 +1,47 @@
+/** Colors */
+$blue: #459BE7;
+
+/** Font weights */
+$semiBold: 600;
+$light: 100;
+
+$fontFamily: 'Open Sans', sans-serif;
+
+$stylingTransition: .7s;
+
+/** Borders */
+$borderColor: #D4D4D1;
+$headerBorderColor: #E5E5E5;
+$lightBorderColor: #F1F1F1;
+
+/** Text */
+$textMutedColor: #CCC;
+$textDangerColor: #A94442;
+$textPrimaryColor: $blue;
+
+/** Inputs */
+$inputBoxShadow: 0 0 5px 0 rgba(69, 155, 231, .75);
+$inputFocusBorderColor: $blue;
+
+/** Counter */
+$counterDangerWeight: $semiBold;
+
+/** Buttons */
+$buttonColor: $blue;
+$buttonTextColor: #FFF;
+$buttonHoverColor: #1C82DD;
+$buttonDisabledColor: #90BFE8;
+$buttonTextWeight: $semiBold;
+
+/** Message */
+$messageTimeColor: $textMutedColor;
+$messageTimeWeight: $light;
+$messageTimeWidth: 80px;
+$messageAuthorColor: $textMutedColor;
+$messageAuthorWeight: $light;
+$messageAuthorDividerColor: $lightBorderColor;
+$messageOwnerWeight: $semiBold;
+$messageOwnerColor: #555;
+
+/** New message */
+$newMessageVerticalPadding: .3em;
