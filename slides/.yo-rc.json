@@ -1,0 +1,11 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Meteor workshop UCLL",
+    "packageVersion": "0.0.1",
+    "revealTheme": "default",
+    "useSass": false,
+    "deployToGithubPages": true,
+    "githubUsername": "ibizz",
+    "githubRepository": "ucll-workshop-meteor-slides"
+  }
+}

@@ -10,8 +10,8 @@ function isOwner(message) {
   return Meteor.userId() === message.owner;
 }
 
-Template.messages.messages = messages;
 Template.messages.helpers({
   time: time,
-  isOwner: isOwner
+  isOwner: isOwner,
+  messages: messages
 });

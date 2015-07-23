@@ -1,0 +1,21 @@
+[
+    {
+        "filename": "index.md",
+        "attr": {
+            "data-background": "#edf4fc"
+        }
+    },
+    "speakers.html",
+    "agenda.md",
+    ["what-is-meteor.html", "meteor-platform.md", "meteor-apps.md", "app-platforms.md", "app-isomorphic.md", "pure-javascript.md"],
+    ["why-meteor.md", "why-meteor-reason.md"],
+    ["structure.md", "structure-model.md", "structure-client.md"],
+    "demo.md",
+    "q&a.md",
+    "references.md",
+    {
+      "attr": {
+        "data-background": "resources/end.png"
+      }
+    }
+]

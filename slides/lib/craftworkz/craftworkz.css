@@ -1,0 +1,62 @@
+body {
+  background-color: #92d4d5;
+  background: #92d4d5;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  color: #4d4d4d;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.reveal section img {
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+
+.reveal section img.speaker {
+  border-radius: 50%;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.reveal section {
+  color: #4d4d4d;
+}
+
+.reveal section p,
+.reveal section ul {
+  color: #FFF;
+}
+
+.reveal section ul li p {
+  margin-bottom: 1em;
+}
+
+.reveal section blockquote {
+  font-weight: 300;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  font-style: italic;
+}
+
+.reveal section a:not(.image) {
+  color: #0095DD;
+}
