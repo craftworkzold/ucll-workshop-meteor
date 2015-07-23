@@ -1,7 +1,7 @@
 ## References
 - Slides: http://www.slideshare.net/craftworkz
 
-- HTML5 slides: http://craftworkz.github.io/ucll-workshop-meteor-slides/
+- HTML5 slides: http://craftworkz.github.io/ucll-workshop-meteor/slides/
 
 - Source code: https://github.com/craftworkz/ucll-workshop-meteor
 
